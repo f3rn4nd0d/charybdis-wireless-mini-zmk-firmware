@@ -91,10 +91,10 @@
 
         BASE {
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y         &kp U        &kp I                             &kp O                          &kp P          &kp BACKSPACE
-&kp LCTRL            &kp A  &kp S  &kp D     &kp F  &kp G        &kp H         &kp J        &kp K                             &kp L                          &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N         &kp M        &hm LA(LC(LG(LEFT_SHIFT))) COMMA  &hm LC(LA(LEFT_SHIFT)) PERIOD  &kp FSLH       &mt RSHIFT LPAR
-                                   &kp LWIN  &mo 1  &kp SPACE    &lt 7 RETURN  &lt 3 SPACE
+&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp LCTRL            &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &mt RSHIFT LPAR
+                                   &kp LWIN  &mo 1  &kp SPACE    &kp ENTER  &mo 12
             >;
         };
 

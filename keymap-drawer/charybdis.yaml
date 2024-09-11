@@ -32,15 +32,15 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
+  - ','
+  - .
   - /
   - {t: (, h: RSHIFT}
   - LWIN
   - NUM
   - SPACE
-  - {t: RETURN, h: MOUSE}
-  - {t: SPACE, h: SYM}
+  - ENTER
+  - '12'
   NUM:
   - ''
   - ''
@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   GAME:
   - '1'
   - TAB
@@ -333,7 +333,7 @@ layers:
   - SCROLL SNIPE
   - L CLK
   - R CLK
-  - {t: RETURN, type: held}
+  - RETURN
   - {t: SPACE, h: SYM}
   SLOW:
   - ''
@@ -544,7 +544,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   '13':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
