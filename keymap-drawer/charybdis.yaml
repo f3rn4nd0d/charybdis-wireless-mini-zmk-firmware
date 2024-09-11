@@ -12,22 +12,22 @@ layers:
   - O
   - P
   - BACK SPACE
-  - Gui+ LCTRL
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: LEFT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: LEFT META}
-  - DEL
-  - {t: '*', h: Sft+ T}
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - {t: '*', h: LEFT SHIFT}
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
@@ -37,8 +37,8 @@ layers:
   - /
   - {t: (, h: RSHIFT}
   - LWIN
-  - {t: BACK SPACE, h: NUM}
-  - {t: ESCAPE, h: NAV}
+  - NUM
+  - SPACE
   - {t: RETURN, h: MOUSE}
   - {t: SPACE, h: SYM}
   NUM:
@@ -122,7 +122,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
