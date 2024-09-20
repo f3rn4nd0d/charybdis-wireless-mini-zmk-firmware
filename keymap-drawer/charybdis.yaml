@@ -59,7 +59,7 @@ layers:
   - ''
   - ''
   - BACK SPACE
-  - ''
+  - HOME
   - PAGE UP
   - '&mkp MB1'
   - '&mkp MB2'
@@ -71,7 +71,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - END
   - PAGE DOWN
   - LEFT
   - DOWN ARROW
@@ -127,41 +127,41 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - ''
-  - +
-  - '{'
-  - '}'
-  - '-'
-  - ':'
-  - \
-  - '`'
-  - $
-  - ^
-  - ''''
   - ''
   - ''
-  - {t: '!', h: LEFT META}
-  - {t: (, h: LEFT ALT}
-  - {t: ), h: LCTRL}
-  - {t: SPACE, h: LEFT SHIFT}
-  - '~'
-  - /
-  - {t: SPACE, h: LEFT SHIFT}
-  - {t: <, h: LCTRL}
-  - {t: '>', h: LEFT ALT}
-  - '#'
+  - AGr+ 5
   - ''
   - ''
-  - '='
-  - '['
-  - ']'
-  - _
-  - ;
-  - '|'
-  - '*'
-  - '&'
-  - '%'
-  - '@'
   - ''
+  - ''
+  - EP ON
+  - EP OFF
+  - ''
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - VOLUME UP
+  - VOLUME DOWN
+  - ''
+  - ''
+  - ''
+  - {t: 'AGr+ [', h: LSHFT}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: 'AGr+ ]', h: RIGHT SHIFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
