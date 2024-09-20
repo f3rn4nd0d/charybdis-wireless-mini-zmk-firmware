@@ -61,10 +61,10 @@ layers:
   - BACK SPACE
   - HOME
   - PAGE UP
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - ''
+  - LEFT
+  - DOWN ARROW
+  - UP ARROW
+  - LEFT
   - ''
   - {t: '`', h: LEFT SHIFT}
   - ''
