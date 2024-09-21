@@ -11,14 +11,6 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        SYM {
-            if-layers = <NUM NAV>;
-            then-layer = <SYM>;
-        };
-    };
 
     behaviors {
         hm: homerow_mod {

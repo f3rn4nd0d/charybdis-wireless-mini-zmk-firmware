@@ -150,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: 'AGr+ [', h: LSHFT}
+  - {t: 'AGr+ [', h: LSHIFT}
   - ''
   - ''
   - ''
@@ -161,12 +161,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: 'AGr+ ]', h: RIGHT SHIFT}
+  - {t: 'AGr+ ]', h: LSHIFT}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   PHOTOS:
   - {t: ▽, type: trans}
   - TAG Z
