@@ -64,7 +64,7 @@ layers:
   - LEFT
   - DOWN ARROW
   - UP ARROW
-  - LEFT
+  - RIGHT
   - ''
   - {t: '`', h: LEFT SHIFT}
   - ''
