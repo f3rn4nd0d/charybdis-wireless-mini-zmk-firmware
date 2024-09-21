@@ -54,7 +54,7 @@ layers:
   - '9'
   - '0'
   - BACK SPACE
-  - ''
+  - BOOT LDR
   - ''
   - ''
   - SCROLL TRACKBALL
@@ -65,7 +65,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - ''
+  - BOOT LDR
   - {t: '`', h: LEFT SHIFT}
   - ''
   - ''
