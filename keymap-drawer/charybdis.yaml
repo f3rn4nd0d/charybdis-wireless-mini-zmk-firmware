@@ -78,11 +78,11 @@ layers:
   - UP ARROW
   - RIGHT
   - {t: '~', h: RIGHT SHIFT}
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
+  - {t: ▽, type: trans}
   - ENTER
-  - ''
+  - {t: ▽, type: trans}
   '2':
   - '`'
   - '!'
@@ -120,8 +120,8 @@ layers:
   - ''
   - ''
   - 'AGr+ #'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -165,7 +165,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   '4':
   - {t: ▽, type: trans}
