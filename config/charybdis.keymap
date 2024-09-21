@@ -117,21 +117,21 @@
             >;
         };
 
-        SYM {
-            bindings = <
-&none               &none         &none         &kp RA(N5)    &none         &none           &none  &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
-&bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none              &none  &none
-&mt LSHFT RA(LBKT)  &none         &none         &none         &none         &none           &none  &none            &none              &none              &none  &mt RIGHT_SHIFT RA(RBKT)
-                                                &trans        &trans        &trans          &none  &trans
-            >;
-        };
-
         GAME {
             bindings = <
 &kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &none  &none  &none  &none  &none  &to 0
 &kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &none  &none  &none  &none  &none  &none
 &kp N3  &kp LSHFT  &kp Z  &kp X   &kp C      &kp V           &none  &none  &none  &none  &none  &none
                           &trans  &kp SPACE  &kp LEFT_ALT    &none  &none
+            >;
+        };
+
+        SYM {
+            bindings = <
+&none               &none         &none         &kp RA(N5)    &none         &none           &none  &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
+&bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none              &none  &none
+&mt LSHFT RA(LBKT)  &none         &none         &none         &none         &none           &none  &none            &none              &none              &none  &mt RIGHT_SHIFT RA(RBKT)
+                                                &trans        &trans        &trans          &none  &trans
             >;
         };
 
@@ -158,7 +158,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
             >;
         };
 
@@ -167,7 +167,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
             >;
         };
 
@@ -176,7 +176,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
             >;
         };
 
