@@ -11,14 +11,8 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
-        tri_layer {
-            if-layers = <NUM NAV>;
-            then-layer = <SYM>;
-        };
-    };
     behaviors {
         hm: homerow_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -33,7 +27,7 @@
         tdtb: td_mouse_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 9 7>, <&to 0>;
+            bindings = <&httl 8 6>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
@@ -41,7 +35,7 @@
         tdtb2: td_slow_scroll {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&httl 9 0>, <&to 8>;
+            bindings = <&httl 8 0>, <&to 7>;
         };
 
         httl: ht_two_layers {
@@ -56,7 +50,7 @@
         td_bore: BASE_or_EXTRA {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&mo 6>, <&to 0>;
+            bindings = <&mo 5>, <&to 0>;
         };
     };
 
@@ -125,15 +119,6 @@
             >;
         };
 
-        GAME {
-            bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &none  &none  &none  &none  &none  &to 0
-&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &none  &none  &none  &none  &none  &none
-&kp N3  &kp LSHFT  &kp Z  &kp X   &kp C      &kp V           &none  &none  &none  &none  &none  &none
-                          &trans  &kp SPACE  &kp LEFT_ALT    &none  &none
-            >;
-        };
-
         SYM {
             bindings = <
 &none               &none         &none         &kp RA(N5)    &none         &none           &none  &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
@@ -166,7 +151,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
             >;
         };
 
@@ -175,7 +160,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
             >;
         };
 
@@ -184,7 +169,7 @@
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
 &none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none       &none            &none      &none         &none          &none
-                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 4 SPACE
+                                         &tdtb2          &mkp LCLK        &mkp RCLK          &kp RETURN  &lt 3 SPACE
             >;
         };
     };
