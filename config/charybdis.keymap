@@ -51,11 +51,11 @@
             tapping-term-ms = <200>;
         };
 
-        tdtb2: td_slow_scroll {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&httl 8 0>, <&to 7>;
-        };
+//       tdtb2: td_slow_scroll {
+//           compatible = "zmk,behavior-tap-dance";
+//            #binding-cells = <0>;
+//            bindings = <&httl 8 0>, <&to 7>;
+//       };
 
         httl: ht_two_layers {
             compatible = "zmk,behavior-hold-tap";
@@ -174,7 +174,7 @@
             >;
         };
 
-        SLOW {
+        SCROLL {
             bindings = <
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
@@ -183,7 +183,7 @@
             >;
         };
 
-        SCROLL {
+        SLOW {
             bindings = <
 &none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none       &none            &none      &none         &none          &none
 &kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none       &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_META  &none
