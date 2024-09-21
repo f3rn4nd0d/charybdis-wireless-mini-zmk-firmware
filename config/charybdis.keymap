@@ -26,7 +26,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        SYM {
+        Third_Layer {
             if-layers = <NUM NAV>;
             then-layer = <SYM>;
         };
