@@ -65,7 +65,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - BOOT LDR
+  - ''
   - {t: '`', h: LEFT SHIFT}
   - ''
   - ''
@@ -118,7 +118,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - BOOT LDR
   - 'AGr+ #'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
