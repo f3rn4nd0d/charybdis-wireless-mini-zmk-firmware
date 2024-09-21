@@ -11,7 +11,14 @@
 };
 
 / {
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        SYM {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     behaviors {
         hm: homerow_mod {

@@ -163,10 +163,10 @@ layers:
   - ''
   - {t: 'AGr+ ]', h: RIGHT SHIFT}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   PHOTOS:
   - {t: ▽, type: trans}
   - TAG Z
