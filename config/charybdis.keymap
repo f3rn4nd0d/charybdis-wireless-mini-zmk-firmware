@@ -16,7 +16,7 @@
 #define EXTRAS 5
 #define MOUSE 6
 #define SCROLL 7
-// #define SLOW 8
+#define SLOW 8
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
@@ -51,11 +51,11 @@
             tapping-term-ms = <200>;
         };
 
-//       tdtb2: td_slow_scroll {
-//           compatible = "zmk,behavior-tap-dance";
-//            #binding-cells = <0>;
-//            bindings = <&httl 8 0>, <&to 7>;
-//       };
+        tdtb2: td_slow_scroll {
+             compatible = "zmk,behavior-tap-dance";
+             #binding-cells = <0>;
+             bindings = <&httl 8 0>, <&to 8>;
+       };
 
         httl: ht_two_layers {
             compatible = "zmk,behavior-hold-tap";
