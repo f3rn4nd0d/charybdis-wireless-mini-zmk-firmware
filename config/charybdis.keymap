@@ -125,7 +125,7 @@
 &kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp N7          &kp N8          &kp N9        &kp N0     &kp BACKSPACE
 &bootloader           &none         &none         &tdtb         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &bootloader
 &mt LEFT_SHIFT GRAVE  &none         &none         &none         &none          &kp END         &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mt RIGHT_SHIFT TILDE
-                                                  &none         &none          &none           &kp ENTER      &none
+                                                  &trans         &trans          &trans           &kp ENTER      &trans
             >;
         };
 
@@ -134,7 +134,7 @@
 &kp GRAVE     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp RS(N6)  &kp LS(N7)      &kp LS(N8)  &kp LS(NUMBER_9)  &kp LS(N0)       &kp BACKSPACE
 &trans        &trans    &trans  &trans    &trans      &trans         &VSplit     &kp LEFT_ARROW  &kp DOWN    &kp UP            &kp RIGHT_ARROW  &none
 &kp RA(APOS)  &none     &none   &none     &none       &none          &HSplit     &none           &none       &none             &none            &kp RA(NON_US_HASH)
-                                &none     &none       &trans         &trans      &trans
+                                &trans     &trans       &trans         &trans      &trans
             >;
         };
 
@@ -143,7 +143,7 @@
 &none                &none         &none         &kp RA(N5)    &none         &none           &none  &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
 &bt BT_CLR           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none              &none  &none
 &mt LSHIFT RA(LBKT)  &none         &none         &none         &none         &none           &none  &none            &none              &none              &none  &mt LSHIFT RA(RBKT)
-                                                 &trans        &trans        &trans          &none  &trans
+                                                 &trans        &trans        &trans          &trans  &trans
             >;
         };
 
