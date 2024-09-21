@@ -14,9 +14,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        SYM {
-            if-layers = <1 2>;
-            then-layer = <3>;
+        tri_layer {
+            if-layers = <NUM NAV>;
+            then-layer = <SYM>;
         };
     };
 
@@ -130,7 +130,7 @@
             bindings = <
 &none               &none         &none         &kp RA(N5)    &none         &none           &none  &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
 &bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none              &none  &none
-&mt LSHFT RA(LBKT)  &none         &none         &none         &none         &none           &none  &none            &none              &none              &none  &mt RIGHT_SHIFT RA(RBKT)
+&mt LSHIFT RA(LBKT)  &none         &none         &none         &none         &none           &none  &none            &none              &none              &none  &mt LSHIFT RA(RBKT)
                                                 &trans        &trans        &trans          &none  &trans
             >;
         };
