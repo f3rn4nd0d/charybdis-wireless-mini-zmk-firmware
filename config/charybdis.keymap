@@ -176,8 +176,8 @@
         compatible = "zmk,conditional-layers";
 
         SYM {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <NUM NAV>;
+            then-layer = <SYM>;
         };
     };
 };
