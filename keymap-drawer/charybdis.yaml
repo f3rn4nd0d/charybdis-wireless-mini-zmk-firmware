@@ -108,7 +108,7 @@ layers:
   - UP
   - RIGHT
   - ''
-  - Sft+AGr+ '
+  - AGr+ '
   - ''
   - ''
   - ''
@@ -119,7 +119,7 @@ layers:
   - ''
   - ''
   - ''
-  - 'Sft+ #'
+  - 'AGr+ #'
   - ''
   - ''
   - {t: ▽, type: trans}
