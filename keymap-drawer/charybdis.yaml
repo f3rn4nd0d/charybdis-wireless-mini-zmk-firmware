@@ -40,7 +40,7 @@ layers:
   - NUM
   - SPACE
   - ENTER
-  - '12'
+  - NAV
   NUM:
   - ESCAPE
   - '1'
@@ -57,7 +57,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - SCROLL TRACKBALL
   - BACK SPACE
   - HOME
   - PAGE UP
@@ -90,12 +90,12 @@ layers:
   - '#'
   - $
   - '%'
-  - ''
-  - PANE ◀
-  - PANE ▲
-  - PANE ▼
-  - PANE ▶
-  - ''
+  - Sft+ 6
+  - Sft+ 7
+  - Sft+ 8
+  - Sft+ 9
+  - Sft+ 0
+  - BACK SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,16 +115,16 @@ layers:
   - ''
   - ''
   - HSPLIT
-  - HOME
-  - PG DN
-  - PG UP
-  - END
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   SYM:
   - ''
   - ''
@@ -544,7 +544,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   '13':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

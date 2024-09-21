@@ -92,17 +92,17 @@
 
         BASE {
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U   &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp LCTRL            &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &mt RSHIFT LPAR
-                                   &kp LWIN  &mo 1  &kp SPACE    &kp ENTER  &mo 12
+&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp LCTRL            &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &mt RSHIFT LPAR
+                                   &kp LWIN  &mo 1  &kp SPACE    &kp ENTER  &mo 2
             >;
         };
 
         NUM {
             bindings = <
 &kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp N7          &kp N8          &kp N9        &kp N0          &kp BACKSPACE
-&none                 &none         &none         &none         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &none
+&none                 &none         &none         &tdtb         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_ARROW  &none
 &mt LEFT_SHIFT GRAVE  &none         &none         &none         &none          &kp END         &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT       &mt RIGHT_SHIFT TILDE
                                                   &none         &none          &none           &kp ENTER      &none
             >;
@@ -110,10 +110,10 @@
 
         NAV {
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &none    &kp LS(LC(H))   &kp LS(LC(J))  &kp LS(LC(K))  &kp LS(LC(L))    &none
-&trans     &trans    &trans  &trans    &trans      &trans         &VSplit  &kp LEFT_ARROW  &kp DOWN       &kp UP         &kp RIGHT_ARROW  &none
-&none      &none     &none   &none     &none       &none          &HSplit  &kp HOME        &kp PG_DN      &kp PG_UP      &kp END          &none
-                             &none     &none       &trans         &trans   &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp RS(N6)  &kp LS(N7)      &kp LS(N8)  &kp LS(NUMBER_9)  &kp LS(N0)       &kp BACKSPACE
+&trans     &trans    &trans  &trans    &trans      &trans         &VSplit     &kp LEFT_ARROW  &kp DOWN    &kp UP            &kp RIGHT_ARROW  &none
+&none      &none     &none   &none     &none       &none          &HSplit     &none           &none       &none             &none            &none
+                             &none     &none       &trans         &trans      &trans
             >;
         };
 
