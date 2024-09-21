@@ -1,5 +1,5 @@
 layers:
-  BASE:
+  '0':
   - TAB
   - Q
   - W
@@ -37,11 +37,11 @@ layers:
   - /
   - {t: (, h: RSHIFT}
   - LWIN
-  - NUM
+  - '1'
   - SPACE
   - ENTER
-  - NAV
-  NUM:
+  - '2'
+  '1':
   - ESCAPE
   - '1'
   - '2'
@@ -83,7 +83,7 @@ layers:
   - ''
   - ENTER
   - ''
-  NAV:
+  '2':
   - '`'
   - '!'
   - '@'
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  SYM:
+  '3':
   - ''
   - ''
   - ''
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {type: held}
-  PHOTOS:
+  '4':
   - {t: ▽, type: trans}
   - TAG Z
   - TAG E
@@ -203,13 +203,13 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BASE, h: toggle}
+  - {t: '0', h: toggle}
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXTRAS:
+  '5':
   - SLEEP
   - ''
   - ''
@@ -251,7 +251,7 @@ layers:
   - ''
   - ''
   - ''
-  MOUSE:
+  '6':
   - ''
   - WHEEL L
   - WHEEL D
@@ -292,8 +292,8 @@ layers:
   - L CLK
   - R CLK
   - RETURN
-  - {t: SPACE, h: SYM}
-  SLOW:
+  - {t: SPACE, h: '3'}
+  '7':
   - ''
   - WHEEL L
   - WHEEL D
@@ -334,8 +334,8 @@ layers:
   - L CLK
   - R CLK
   - RETURN
-  - {t: SPACE, h: SYM}
-  SCROLL:
+  - {t: SPACE, h: '3'}
+  '8':
   - ''
   - WHEEL L
   - WHEEL D
@@ -376,13 +376,13 @@ layers:
   - L CLK
   - R CLK
   - RETURN
-  - {t: SPACE, h: SYM}
+  - {t: SPACE, h: '3'}
 combos:
 - p: [8, 9]
   k: DELETE
-  l: [BASE]
+  l: ['0']
 - p: [17, 18]
   k: CAPS WORD
-  l: [BASE]
+  l: ['0']
 - p: [38, 39]
   k: L_BASE L_EXTRA

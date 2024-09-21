@@ -6,6 +6,18 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
+// Layer aliases test
+
+#define BASE 0
+#define NUM 1
+#define NAV 2
+#define SYM 3
+#define PHOTOS 4
+#define EXTRAS 5 
+#define MOUSE 6
+#define SLOW 7
+#define SCROLL 8
+
 / {
     chosen { zmk,matrix_transform = &default_transform; };
 };
