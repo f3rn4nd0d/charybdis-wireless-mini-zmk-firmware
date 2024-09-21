@@ -15,8 +15,8 @@
 #define PHOTOS 4
 #define EXTRAS 5
 #define MOUSE 6
-#define SLOW 7
-#define SCROLL 8
+#define SCROLL 7
+// #define SLOW 8
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
