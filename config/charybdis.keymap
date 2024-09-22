@@ -52,10 +52,10 @@
         };
 
         tdtb2: td_slow_scroll {
-             compatible = "zmk,behavior-tap-dance";
-             #binding-cells = <0>;
-             bindings = <&httl 8 0>, <&to 8>;
-       };
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&httl 8 0>, <&to 8>;
+        };
 
         httl: ht_two_layers {
             compatible = "zmk,behavior-hold-tap";
@@ -113,10 +113,10 @@
 
         BASE {
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp LCTRL            &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &mt RSHIFT LPAR
-                                   &kp LWIN  &mo 1  &kp SPACE    &kp ENTER  &mo 2
+&kp TAB              &kp Q        &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                &kp BACKSPACE
+&kp LCTRL            &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
+&mt LEFT_SHIFT STAR  &kp Z        &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RSHIFT LPAR
+                                                  &kp LWIN            &mo 1             &kp SPACE    &kp ENTER  &mo 2
             >;
         };
 
