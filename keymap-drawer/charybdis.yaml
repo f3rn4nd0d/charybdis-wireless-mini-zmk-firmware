@@ -102,11 +102,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VSPLIT
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
   - ''
   - AGr+ '
   - ''
@@ -114,11 +114,11 @@ layers:
   - ''
   - ''
   - ''
-  - HSPLIT
+  - Sft+ =
+  - '{'
+  - '}'
+  - '|'
   - ''
-  - ''
-  - ''
-  - BOOT LDR
   - 'AGr+ #'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
