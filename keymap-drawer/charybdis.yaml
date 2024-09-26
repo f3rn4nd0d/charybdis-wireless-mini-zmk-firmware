@@ -13,16 +13,16 @@ layers:
   - P
   - BACK SPACE
   - LCTRL
-  - {t: A, h: LCTRL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT COMMAND}
+  - A
+  - S
+  - D
   - {t: F, h: LEFT SHIFT}
   - G
   - H
   - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RIGHT COMMAND}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCTRL}
+  - K
+  - L
+  - ;
   - ''''
   - {t: '*', h: LEFT SHIFT}
   - Z
@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - {t: (, h: RSHIFT}
-  - SCROLL SNIPE
+  - LEFT COMMAND
   - '1'
   - SPACE
   - ENTER
@@ -82,7 +82,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
-  - {t: ▽, type: trans}
+  - RIGHT ALT
   '2':
   - '`'
   - '!'
