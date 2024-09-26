@@ -16,10 +16,10 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: LEFT SHIFT}
+  - F
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
+  - J
   - K
   - L
   - ;
