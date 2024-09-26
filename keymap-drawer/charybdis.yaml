@@ -73,10 +73,10 @@ layers:
   - ''
   - END
   - PAGE DOWN
-  - LEFT
-  - DOWN ARROW
-  - UP ARROW
-  - RIGHT
+  - Alt+ LEFT
+  - Alt+ DOWN ARROW
+  - Alt+ UP ARROW
+  - Alt+ RIGHT
   - {t: '~', h: RIGHT SHIFT}
   - {t: ▽, type: trans}
   - {type: held}

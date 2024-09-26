@@ -122,9 +122,9 @@
 
         NUM {
             bindings = <
-&kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp N7          &kp N8          &kp N9        &kp N0     &kp BACKSPACE
-&bootloader           &none         &none         &tdtb         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none
-&mt LEFT_SHIFT GRAVE  &none         &none         &none         &none          &kp END         &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mt RIGHT_SHIFT TILDE
+&kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp N7              &kp N8              &kp N9            &kp N0         &kp BACKSPACE
+&bootloader           &none         &none         &tdtb         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none
+&mt LEFT_SHIFT GRAVE  &none         &none         &none         &none          &kp END         &kp PAGE_DOWN  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &mt RIGHT_SHIFT TILDE
                                                   &trans        &trans         &trans          &kp ENTER      &kp RIGHT_ALT
             >;
         };
