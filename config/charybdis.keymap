@@ -7,11 +7,33 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "macros.dtsi"
 
+// Layer aliases test
+
+#define BASE 0
+#define NUM 1
+#define NAV 2
+#define SYM 3
+#define PHOTOS 4
+#define EXTRAS 5
+#define MOUSE 6
+#define SCROLL 7
+#define SLOW 8
+
 // / {
 //     chosen { zmk,matrix_transform = &default_transform; };
 // };
 
 / {
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Third_Layer {
+            if-layers = <NUM NAV>;
+            then-layer = <SYM>;
+        };
+    };
+
     /* input config for mouse move mode */
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
@@ -169,41 +191,41 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────────╮  ╭────────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬──────────────╮
-    &to 0            &kp Q           &kp W                     &kp E                         &kp R              &kp T                 &kp Y             &kp U             &kp I                             &kp O                          &kp P                    &td_layers
+&kp TAB              &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-    &hm LCMD TAB     &lt 2 A         &hm LEFT_ALT S            &hm LCTRL D                   &hm LEFT_SHIFT F   &kp G                 &kp H             &hm LEFT_SHIFT J  &hm RCTRL K                       &hm RIGHT_ALT L                &hm LCMD SEMICOLON       &kp DEL
+&kp LCTRL            &kp A  &kp S  &kp D             &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼──────────────┤
-    &kp C_AC_SEARCH  &kp Z           &hm LC(LA(LEFT_SHIFT)) X  &hm LA(LC(LG(LEFT_SHIFT))) C  &kp V              &kp B                 &kp N             &kp M             &hm LA(LC(LG(LEFT_SHIFT))) COMMA  &hm LC(LA(LEFT_SHIFT)) PERIOD  &kp FSLH                 &kp F12
+&mt LEFT_SHIFT STAR  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &mt RSHIFT LPAR
 // ╰────────────────┴──────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────────┤  ├────────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴──────────────╯
-                                                                               &td_cursor    &mkp LCLK          &lt 1 BACKSPACE       &lt 7 RETURN      &lt 3 SPACE
+                                   &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp ENTER  &mo 2
                                                                           // ╰─────────────┴──────────────────┴──────────────────╯  ╰────────────────┴──────────────╯
             >;
         };
 
-        NUM {
+       NUM {
             bindings = <
-&trans   &none  &none  &none  &none          &none    &kp SLASH  &hm F7 N7  &hm F8 N8  &hm F9 N9  &hm F10 MINUS  &none
-&trans   &none  &none  &none  &kp BACKSPACE  &none    &kp ASTRK  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &trans
-&none    &none  &none  &none  &none          &none    &kp DOT    &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 EQUAL  &none
-                       &none  &none          &trans   &kp N0     &trans
+&kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp N7              &kp N8              &kp N9            &kp N0         &kp BACKSPACE
+&trans                &none         &none         &tdtb         &kp BACKSPACE  &kp HOME        &kp PAGE_UP    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &trans
+&mt LEFT_SHIFT GRAVE  &none         &none         &none         &none          &kp END         &kp PAGE_DOWN  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &mt RIGHT_SHIFT TILDE
+                                                  &trans        &trans         &trans          &kp ENTER      &kp RIGHT_ALT
             >;
         };
 
         NAV {
             bindings = <
-&none   &none   &none   &none   &none   &none     &none    &kp LS(LC(H))   &kp LS(LC(J))  &kp LS(LC(K))  &kp LS(LC(L))    &none
-&trans  &trans  &trans  &trans  &trans  &none     &VSplit  &kp LEFT_ARROW  &kp DOWN       &kp UP         &kp RIGHT_ARROW  &none
-&none   &none   &none   &none   &none   &none     &HSplit  &kp HOME        &kp PG_DN      &kp PG_UP      &kp END          &none
-                        &none   &none   &trans    &trans   &trans
+&kp GRAVE     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp RS(N6)     &kp LS(N7)        &kp LS(N8)         &kp LS(NUMBER_9)  &kp LS(N0)  &kp BACKSPACE
+&trans        &trans    &trans  &trans    &trans      &trans         &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp GRAVE   &trans
+&kp RA(APOS)  &none     &none   &none     &none       &none          &kp LS(EQUAL)  &kp LS(MINUS)     &kp RIGHT_BRACE    &kp PIPE          &none       &kp RA(NON_US_HASH)
+                                &trans    &trans      &trans         &trans         &trans
             >;
         };
 
         SYM {
             bindings = <
-&none  &kp PLUS            &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp MINUS             &kp COLON      &kp BSLH   &kp GRAVE             &kp DLLR      &kp CARET        &kp SQT      &none
-&none  &hm LCMD EXCL  &hm LEFT_ALT LPAR  &hm LCTRL RPAR   &hm LEFT_SHIFT SPACE  &kp TILDE      &kp SLASH  &hm LEFT_SHIFT SPACE  &hm LCTRL LT  &hm LEFT_ALT GT  &kp HASH     &none
-&none  &kp EQUAL           &kp LBKT           &kp RBKT         &kp UNDERSCORE        &kp SEMICOLON  &kp PIPE   &kp ASTRK             &kp AMPS      &kp PRCNT        &kp AT_SIGN  &none
-                                              &trans           &trans                &trans         &none      &trans
+&none                &none         &none         &kp RA(NUMBER_5)  &none         &none           &none   &none            &ext_power EP_ON   &ext_power EP_OFF  &none  &none
+&bt BT_CLR           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none              &none  &none
+&mt LSHIFT RA(LBKT)  &none         &none         &none             &none         &none           &none   &none            &none              &none              &none  &mt LSHIFT RA(RBKT)
+                                                 &trans            &trans        &trans          &trans  &trans
             >;
         };
 
