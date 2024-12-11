@@ -7,18 +7,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "macros.dtsi"
 
-// Layer aliases test
-
-#define BASE 0
-#define NUM 1
-#define NAV 2
-#define SYM 3
-#define PHOTOS 4
-#define EXTRAS 5
-#define MOUSE 6
-#define SCROLL 7
-#define SLOW 8
-
 // / {
 //     chosen { zmk,matrix_transform = &default_transform; };
 // };
@@ -29,8 +17,8 @@
         compatible = "zmk,conditional-layers";
 
         Third_Layer {
-            if-layers = <NUM NAV>;
-            then-layer = <SYM>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
