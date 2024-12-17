@@ -38,7 +38,7 @@ layers:
   - {t: (, h: RSHIFT}
   - SCRL SLOW
   - L CLK
-  - {t: SPACE, h: NUM}
+  - SPACE
   - {t: ENTER, h: MOUSE}
   - NAV
   NUM:
