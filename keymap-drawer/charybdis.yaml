@@ -273,10 +273,10 @@ layers:
   - MOVE R
   - FWD
   - ''
-  - RIGHT SHIFT
+  - RCMD
   - RCTRL
   - LEFT ALT
-  - LCMD
+  - ''
   - ''
   - ''
   - UNDO
@@ -291,7 +291,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - L CLK
+  - {t: ▽, type: trans}
   - R CLK
   - {t: RETURN, type: held}
   - {t: ▽, type: trans}
