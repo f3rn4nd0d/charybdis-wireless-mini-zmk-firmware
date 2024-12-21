@@ -280,9 +280,9 @@ layers:
   - ''
   - ''
   - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
   - M CLK
   - ''
   - ''
