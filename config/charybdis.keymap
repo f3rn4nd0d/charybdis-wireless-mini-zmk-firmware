@@ -31,8 +31,8 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <2>;
+        scale-multiplier = <2>; //was 1
+        scale-divisor = <3>; //was 2
         bindings = <&ib_toggle_layer 7>;
     };
 
