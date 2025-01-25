@@ -191,19 +191,19 @@
 
         NUM {
             bindings = <
-&kp ESCAPE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BACKSPACE
-&trans &none &none &none &kp BACKSPACE  &kp HOME        &kp PAGE_UP &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT      &trans
-&mt LEFT_SHIFT GRAVE &none &none &none &none &kp END    &kp PAGE_DOWN  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &mt RIGHT_SHIFT TILDE
-                            &trans &trans &trans        &kp ENTER &kp RIGHT_ALT
+&kp ESCAPE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                       &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BACKSPACE
+&trans &none &none &none               &msc MOVE_UP &kp HOME        &kp PAGE_UP &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT      &trans
+&mt LEFT_SHIFT GRAVE &none &none &none &msc MOVE_DOWN &kp END       &kp PAGE_DOWN  &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &mt RIGHT_SHIFT TILDE
+                            &trans &trans &trans                    &kp ENTER &kp RIGHT_ALT
             >;
         };
 
         NAV {
             bindings = <
-&kp GRAVE     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp RS(N6)     &kp LS(N7)        &kp LS(N8)         &kp LS(NUMBER_9)  &kp LS(N0)  &kp BACKSPACE
-&trans        &trans    &trans  &trans    &trans      &trans         &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp GRAVE   &trans
-&kp RA(APOS)  &none     &none   &none     &none       &none          &kp LS(EQUAL)  &kp LS(MINUS)     &kp RIGHT_BRACE    &kp PIPE          &none       &kp RA(NON_US_HASH)
-                                &trans    &trans      &trans         &trans         &trans
+&kp GRAVE     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT             &kp RS(N6)     &kp LS(N7)        &kp LS(N8)         &kp LS(NUMBER_9)  &kp LS(N0)  &kp BACKSPACE
+&trans        &trans    &trans  &trans    &msc MOVE_UP  &kp HOME          &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp GRAVE   &trans
+&kp RA(APOS)  &none     &none   &none     &msc MOVE_DOWN &kp END       &kp LS(EQUAL)  &kp LS(MINUS)     &kp RIGHT_BRACE    &kp PIPE          &none       &kp RA(NON_US_HASH)
+                                &trans    &mkp LCLK   &mkp RCLK               &trans         &trans
             >;
         };
 
