@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
   - TAB
@@ -58,7 +59,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - BACK SPACE
+  - WHEEL D
   - HOME
   - PAGE UP
   - LEFT
@@ -70,7 +71,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - WHEEL U
   - END
   - PAGE DOWN
   - Alt+ LEFT
@@ -100,8 +101,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - WHEEL D
+  - {t: HOME, type: held}
   - '='
   - '['
   - ']'
@@ -112,8 +113,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - WHEEL U
+  - END
   - Sft+ =
   - Sft+ -
   - '}'
@@ -121,8 +122,8 @@ layers:
   - ''
   - 'AGr+ #'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - L CLK
+  - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
