@@ -41,7 +41,7 @@ layers:
   - L CLK
   - SPACE
   - {t: ENTER, h: MOUSE}
-  - NAV
+  - Y
   NUM:
   - ESCAPE
   - '1'
