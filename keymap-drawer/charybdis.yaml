@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  BASE:
+  '0':
   - TAB
   - Q
   - W
@@ -14,16 +14,16 @@ layers:
   - P
   - BACK SPACE
   - LCTRL
-  - {t: A, h: NUM}
+  - {t: A, h: '1'}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LCMD}
-  - {t: G, h: NAV}
-  - {t: H, h: NAV}
+  - {t: G, h: '2'}
+  - {t: H, h: '2'}
   - {t: J, h: RCMD}
   - {t: K, h: RCTRL}
   - {t: L, h: RIGHT ALT}
-  - {t: ;, h: NUM}
+  - {t: ;, h: '1'}
   - ''''
   - {t: '*', h: LEFT SHIFT}
   - Z
@@ -40,9 +40,9 @@ layers:
   - SCRL SLOW
   - L CLK
   - SPACE
-  - {t: ENTER, h: MOUSE}
-  - NAV
-  NUM:
+  - {t: ENTER, h: '7'}
+  - '2'
+  '1':
   - ESCAPE
   - '1'
   - '2'
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - RIGHT ALT
-  NAV:
+  '2':
   - '`'
   - '!'
   - '@'
@@ -126,7 +126,7 @@ layers:
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYM:
+  '3':
   - ''
   - ''
   - ''
@@ -168,9 +168,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  GAME: ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE,
-    LEFT ALT, '', '']
-  PHOTOS:
+  '4': ['1', TAB, Q, W, E, R, '', '', '', '', '', '', '2', LCTRL, A, S, D, F, '', '', '', '', '', '', '3', LSHFT, Z, X, C, V, '', '', '', '', '', '', '', SPACE, LEFT
+      ALT, '', '']
+  '5':
   - {t: ▽, type: trans}
   - TAG Z
   - TAG E
@@ -212,7 +212,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXTRAS:
+  '6':
   - POWER
   - SHRUG
   - LGTM
@@ -254,7 +254,7 @@ layers:
   - ''
   - ''
   - ''
-  MOUSE:
+  '7':
   - ''
   - WHEEL L
   - WHEEL D
@@ -296,7 +296,7 @@ layers:
   - R CLK
   - {t: RETURN, type: held}
   - {t: ▽, type: trans}
-  SLOW:
+  '8':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -338,7 +338,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCROLL:
+  '9':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -383,7 +383,7 @@ layers:
 combos:
 - p: [17, 18]
   k: CAPS WORD
-  l: [BASE]
+  l: ['0']
 - p: [28, 37]
   k: M CLK
 - p: [16, 37]
